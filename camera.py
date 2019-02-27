@@ -25,20 +25,24 @@ while True:
         "devID": "imageReader",
         "imageMessage": "2"
         }
+        sleep(4)
     elif button2.is_pressed and button4.is_pressed:
         print("Answer 3")
         data = {
         "devID": "imageReader",
         "imageMessage": "3"
         }
+        sleep(4)
     elif button2.is_pressed and button3.is_pressed:
         print("Answer 4")
         data = {
         "devID": "imageReader",
         "imageMessage": "4"
         }
+        sleep(4)
     try:
         response = requests.request("POST", URL, data=payload)
         print(response.text)
     except:
         print("data not POSTED")
+        print(data)
