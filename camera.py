@@ -19,6 +19,7 @@ while True:
     
     if button2.is_pressed and button3.is_pressed and button4.is_pressed:
         print("SELECT ANY ANSWER")
+        sleep(4)
     elif button3.is_pressed and button4.is_pressed:
         print("Answer 2")
         data = {
@@ -40,9 +41,6 @@ while True:
         "imageMessage": "4"
         }
         sleep(4)
-    else:
-        sleep(4)
-        
     try:
         response = requests.request("POST", URL, data=data)
         print(response.text)
