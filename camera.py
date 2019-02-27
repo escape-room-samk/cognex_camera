@@ -40,6 +40,9 @@ while True:
         "imageMessage": "4"
         }
         sleep(4)
+    else:
+        sleep(4)
+        
     try:
         response = requests.request("POST", URL, data=data)
         print(response.text)
