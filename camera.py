@@ -41,7 +41,7 @@ while True:
         }
         sleep(4)
     try:
-        response = requests.request("POST", URL, data=payload)
+        response = requests.request("POST", URL, data=data)
         print(response.text)
     except:
         print("data not POSTED")
