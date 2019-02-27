@@ -4,7 +4,7 @@ from signal import pause
 from gpiozero import Button
 import requests
 
-API_ENDPOINT = "http://172.17.2.99:3000/api/imageReader"
+URL = "http://172.17.2.99:3000/api/imageReader"
 
 
 button2 = Button(4)
