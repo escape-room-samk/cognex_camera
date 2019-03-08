@@ -19,7 +19,7 @@ try:
                 data = {
                 "devID": "imageReader",
                 "question": "How much is 1 + 1 ?",
-                "boolean": 0,
+                "boolean": "question",
                 "value": ""
                 }
                 response = requests.request("POST", URL, data=data)
@@ -32,7 +32,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 1 + 1 ?",
-                                "boolean": 0,
+                                "boolean": "true",
                                 "value": "2"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -44,7 +44,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 1 + 1 ?",
-                                "boolean": "False",
+                                "boolean": "false",
                                 "value": "3"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -56,7 +56,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 1 + 1 ?",
-                                "boolean": "False",
+                                "boolean": "false",
                                 "value": "4"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -66,11 +66,12 @@ try:
                                 sleep(4)
                 i = 2
         elif i == 2:
+		sleep(5)
 		print "Question 2"
                 data = {
                 "devID": "imageReader",
                 "question": "How much is 5 - 2?",
-                "boolean": "False",
+                "boolean": "question",
                 "value": ""
                 }
                 response = requests.request("POST", URL, data=data)
@@ -84,7 +85,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 5 - 2 ?",
-                                "boolean": "False",
+                                "boolean": "false",
                                 "value": "2"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -96,7 +97,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 5 - 2 ?",
-                                "boolean": "True",
+                                "boolean": "true",
                                 "value": "3"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -108,7 +109,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 5 - 2 ?",
-                                "boolean": "False",
+                                "boolean": "false",
                                 "value": "4"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -118,11 +119,12 @@ try:
                                 sleep(4)
 		i = 3
         elif i == 3:
+		sleep(5)
 		print "Question 3"
                 data = {
                 "devID": "imageReader",
                 "question": "How much is 2 * 2 ?",
-                "boolean": "False",
+                "boolean": "question",
                 "value": ""
                 }
                 response = requests.request("POST", URL, data=data)
@@ -136,7 +138,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 2 * 2 ?",
-                                "boolean": "False",
+                                "boolean": "false",
                                 "value": "2"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -148,7 +150,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 2 * 2 ?",
-                                "boolean": "True",
+                                "boolean": "true",
                                 "value": "4"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -160,7 +162,7 @@ try:
                                 data = {
                                 "devID": "imageReader",
                                 "question": "How much is 2 * 2 ?",
-                                "boolean": "False",
+                                "boolean": "false",
                                 "value": "3"
                                 }
                                 response = requests.request("POST", URL, data=data)
@@ -170,10 +172,11 @@ try:
                                 sleep(4)
 		i = 4
         elif i == 4:
+		sleep(5)
                 data = {
                 "devID": "imageReader",
                 "question": "YOU WIN THE GAME",
-                "boolean": "True",
+                "boolean": "true",
                 "value": ""
                 }
                 response = requests.request("POST", URL, data=data)
