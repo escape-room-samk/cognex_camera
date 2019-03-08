@@ -176,8 +176,8 @@ try:
                 data = {
                 "devID": "imageReader",
                 "question": "YOU WIN THE GAME",
-                "boolean": "true",
-                "value": ""
+                "boolean": "win",
+                "value": "win"
                 }
                 response = requests.request("POST", URL, data=data)
 		print(response.text)
